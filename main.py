@@ -139,7 +139,6 @@ def main():
     args = parser.parse_args()
 
     use_accel = not args.no_accel and torch.accelerator.is_available()
-
     torch.manual_seed(args.seed)
 
     if use_accel:
